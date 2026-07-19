@@ -209,7 +209,7 @@ st.markdown("""
 def load_taxi_data():
     try:
         df = pd.read_csv(
-            '/Users/deeksharprasad/thesis_project/outputs/taxi_full_year_anomalies.csv'
+            'data_cloud/taxi_full_year_anomalies.csv'
         )
         df['pickup_date'] = pd.to_datetime(df['pickup_date'])
         return df
@@ -221,7 +221,7 @@ def load_taxi_data():
 def load_weather_data():
     try:
         df = pd.read_csv(
-            '/Users/deeksharprasad/thesis_project/data/nyc_weather_2023.csv'
+            'data_cloud/nyc_weather_2023.csv'
         )
         df['pickup_date'] = pd.to_datetime(df['pickup_date'])
         return df
